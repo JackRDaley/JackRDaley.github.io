@@ -26,6 +26,15 @@ main {
     padding: 0 1rem;
 }
 
+#headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    float: right;
+}
+
 section {
     margin-bottom: 2rem;
 }
