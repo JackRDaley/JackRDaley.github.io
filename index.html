@@ -14,9 +14,19 @@
 
         <main>
             <section id="about">
-                <h2>About me</h2>
                 <img src="headshot.jpeg" alt="headshot of Jack Daley" id="headshot">
                 <h1>Hi, I'm Jack Daley, a first year computer science student at UMass Boston. I enjoy learning about programming, technology, and building simple but useful projects to solve everyday issues.</h1>
+            </section>
+
+            <section id="skills">
+            <h2>Skills</h2>
+                <ul class="pill-list">
+                    <li>Python</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Chrome Extensions</li>
+                </ul>
             </section>
 
             <section id="projects">
@@ -33,10 +43,29 @@
             </section>
 
             <section id="contact">
-                <h2>Want to learn more?</h2>
-                <p>Email: <a class="hot-link" href="mailto:jonathan.daley001@umb.edu">jonathan.daley001@umb.edu</a></p>
-                <p>GitHub: <a class="hot-link" href="https://github.com/JackRDaley">github.com/JackRDaley</a></p>
+                <h2>Contact</h2>
+                <form action="https://formsubmit.co/jonathan.daley001@umb.edu" method="POST" class="contact">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Website message from JackDaley.dev">
+                    <label>
+                        Name
+                    <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        Email
+                    <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Message
+                    <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                    <p style="margin-top:.5rem;font-size:.9rem;">or email me directly:
+                    <a class="hot-link" href="mailto:jonathan.daley001@umb.edu">jonathan.daley001@umb.edu</a>
+                    </p>
+                </form>
             </section>
+
         </main>
 
         <footer>
