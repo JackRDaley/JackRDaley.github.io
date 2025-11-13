@@ -136,7 +136,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,.06);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     display: grid;
     gap: .75rem;
     width: 100%;
