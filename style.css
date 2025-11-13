@@ -35,9 +35,18 @@ main {
     float: right;
 }
 
-section {
-    margin-bottom: 2rem;
+@media (max-width: 700px) {
+    #headshot {
+        float: none;
+        margin: 1rem auto;
+        display: block;
+    }
 }
+
+section {
+    margin-bottom: 2.5rem;
+}
+
 
 h1, h2 {
     margin-bottom: 0.5rem;
@@ -115,4 +124,41 @@ footer {
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.contact {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+.contact label {
+    gap: .35rem;
+}
+
+.contact input, .contact textarea {
+    line-height: 1.4;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    border-color: #0078ff;
+    box-shadow: 0 0 0 3px rgba(0,120,255,.15);
+}
+
+.contact button {
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+}
+.contact button:hover {
+    background: #000;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+.contact-alt {
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: #555;
 }

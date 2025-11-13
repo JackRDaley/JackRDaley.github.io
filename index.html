@@ -44,30 +44,34 @@
 
             <section id="contact">
                 <h2>Contact</h2>
-                <form action="https://formsubmit.co/jonathan.daley001@umb.edu" method="POST" class="contact">
+                <form action="https://formsubmit.co/jonathan.daley001@umb.edu" method="POST" class="contact" novalidate>
+                    <!-- FormSubmit options -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Website message from JackDaley.dev">
-                    <label>
-                        Name
-                    <input type="text" name="name" required>
+                    <!-- Redirect to a simple thank-you message on your own site -->
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <!-- Light spam protection -->
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <label for="name">Name
+                    <input id="name" name="name" type="text" required autocomplete="name" placeholder="Jane Doe">
                     </label>
-                    <label>
-                        Email
-                    <input type="email" name="email" required>
+
+                    <label for="email">Email
+                    <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
                     </label>
-                    <label>
-                        Message
-                    <textarea name="message" rows="4" required></textarea>
+
+                    <label for="message">Message
+                    <textarea id="message" name="message" rows="4" required placeholder="How can I help?"></textarea>
                     </label>
+
                     <button type="submit">Send</button>
-                    <p style="margin-top:.5rem;font-size:.9rem;">or email me directly:
+                    <p class="contact-alt">or email me directly:
                     <a class="hot-link" href="mailto:jonathan.daley001@umb.edu">jonathan.daley001@umb.edu</a>
                     </p>
                 </form>
-            </section>
-
+                </section>
         </main>
-
         <footer>
             <p>2025 Jack Daley</p>
         </footer>
